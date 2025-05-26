@@ -122,3 +122,4 @@
 /home/andrei/Documents/Navarro/EstoqueService/obj/Debug/net8.0/EstoqueService.pdb
 /home/andrei/Documents/Navarro/EstoqueService/obj/Debug/net8.0/EstoqueService.genruntimeconfig.cache
 /home/andrei/Documents/Navarro/EstoqueService/obj/Debug/net8.0/ref/EstoqueService.dll
+/home/andrei/Documents/Navarro/EstoqueService/obj/Debug/net8.0/EstoqueService.sourcelink.json

@@ -127,6 +127,7 @@ namespace PagamentoService.Services
                     var confirmado = new PagamentoConfirmado
                     {
                         PedidoId = pedido.PedidoId,
+                        ClienteId = pedido.ClienteId,
                         ValorPago = pedido.ValorTotal,
                         StatusPagamento = "confirmado",
                         DataConfirmacao = DateTime.UtcNow

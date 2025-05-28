@@ -13,7 +13,7 @@ public class PedidoService
 
     public async Task SalvarPedidoAsync(PedidoDTO dto)
     {
-        // Step 1: Cria o pedido e salva para gerar o PedidoId
+
         var pedido = new Pedido
         {
             ClienteId = dto.ClienteId,
@@ -22,14 +22,13 @@ public class PedidoService
         };
 
         _dbContext.Pedidos.Add(pedido);
-        await _dbContext.SaveChangesAsync(); // Agora PedidoId está disponível
+        await _dbContext.SaveChangesAsync(); 
 
-        // Step 2: Cria os itens com o PedidoId correto
         var itens = dto.Itens.Select(i => new PedidoItem
         {
             ProdutoId = i.ProdutoId,
             Quantidade = i.Quantidade,
-            PedidoId = pedido.PedidoId // FK corretamente atribuída
+            PedidoId = pedido.PedidoId 
         }).ToList();
 
         _dbContext.ItensPedido.AddRange(itens);

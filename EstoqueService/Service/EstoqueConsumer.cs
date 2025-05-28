@@ -55,7 +55,7 @@ namespace EstoqueService.Services
 
             var factory = new ConnectionFactory
             {
-                Uri = new Uri("amqps://xzhfkjrz:Kq0gWWMiMN5xR9m1Rmz1kE89Go8ALf4h@porpoise.rmq.cloudamqp.com/xzhfkjrz"),
+                Uri = new Uri(""), // URI DO RABBITMQ
                 DispatchConsumersAsync = true
             };
 

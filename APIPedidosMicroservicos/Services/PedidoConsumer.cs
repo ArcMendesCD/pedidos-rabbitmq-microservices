@@ -24,7 +24,7 @@ namespace APIPedidosMicroservicos.Services
         {
             _scopeFactory = scopeFactory;
 
-            var uri = new Uri("amqps://xzhfkjrz:Kq0gWWMiMN5xR9m1Rmz1kE89Go8ALf4h@porpoise.rmq.cloudamqp.com/xzhfkjrz");
+            var uri = new Uri(""); // URI DO RABBITMQ
 
             var factory = new ConnectionFactory()
             {
